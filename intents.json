@@ -1,0 +1,103 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for visiting coffee shop. How can I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","Wow","Amazing"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "menu",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What can you do?",
+        "What do you do?",
+        "Show me menu.",
+        "What do you have in the menu?",
+        "What is in the menu?",
+        "Menu"
+      ],
+      "responses": [
+        "We have black coffee for 10rs,\n cold coffee for 60 rs,\n espresso for 40rs."
+      ]
+    },
+    {
+      "tag": "prices",
+      "patterns": [
+        "What are the prices?",
+        "What is the price?",
+        "Show me prices.",
+        "What do you have the price for this?",
+        "prices"
+      ],
+      "responses": [
+        "We have black coffee for 10rs,\n cold coffee for 60 rs,\n espresso for 40rs."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with PayTM?",
+        "Are you cash only?",
+        "What is payment process?",
+        "You dont have cash on delivery?",
+        "You have COD?",
+        "Is COD accepted?"
+      ],
+      "responses": [
+        "We accept COD(Cash On Delivery), and online payments."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "How long will it take?",
+        "How long does order take?",
+        "When do I get my order?",
+        "When will you send it to me?"
+      ],
+      "responses": [
+        "The order will take between 10 to 15 mins. Else your coffee is free."
+      ]
+    },
+    {
+      "tag": "me",
+      "patterns": [
+        "What can you do?",
+        "What do you do?",
+        "What is your work?",
+        "When will you send it to me?",
+        "How will you do?"
+      ],
+      "responses": [
+        "I will send the order right on your table. You dont need to wait in lines:)"
+      ]
+    }
+  ]
+}

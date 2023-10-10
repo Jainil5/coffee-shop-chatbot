@@ -1,11 +1,9 @@
 import numpy as np
 import random
 import json
-
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
@@ -15,6 +13,7 @@ with open('intents.json', 'r') as f:
 all_words = []
 tags = []
 xy = []
+
 # loop through each sentence in our intents patterns
 for intent in intents['intents']:
     tag = intent['tag']
@@ -27,6 +26,7 @@ for intent in intents['intents']:
         all_words.extend(w)
         # add to xy pair
         xy.append((w, tag))
+print(len(all_words),len(tags),len(xy))    
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
@@ -34,7 +34,8 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
-
+# print(len(all_words),len(tags),len(xy))
+# print(xy)
 
 # create training data
 X_train = []
@@ -51,7 +52,7 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 2000
+num_epochs = 3000
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])

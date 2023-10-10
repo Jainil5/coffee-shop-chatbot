@@ -11,12 +11,16 @@
         "Good day"
       ],
       "responses": [
-        "Hello, thanks for visiting coffee shop. How can I help you?"
+        "Hello, thanks for visiting our STAR-CAFE. How can I help you?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -25,8 +29,23 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","Wow","Amazing"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "Wow",
+        "Amazing",
+        "This is good",
+        "That's awesome",
+        "That's Nice",
+        "Okay"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
     },
     {
       "tag": "menu",
@@ -34,15 +53,13 @@
         "Which items do you have?",
         "What kinds of items are there?",
         "What do you sell?",
-        "What can you do?",
-        "What do you do?",
         "Show me menu.",
         "What do you have in the menu?",
         "What is in the menu?",
         "Menu"
       ],
       "responses": [
-        "We have black coffee for 10rs,\n cold coffee for 60 rs,\n espresso for 40rs."
+        "asking_menu"
       ]
     },
     {
@@ -52,10 +69,11 @@
         "What is the price?",
         "Show me prices.",
         "What do you have the price for this?",
-        "prices"
+        "prices",
+        "How much does the items costs"
       ],
       "responses": [
-        "We have black coffee for 10rs,\n cold coffee for 60 rs,\n espresso for 40rs."
+        "asking_prices"
       ]
     },
     {
@@ -68,7 +86,8 @@
         "What is payment process?",
         "You dont have cash on delivery?",
         "You have COD?",
-        "Is COD accepted?"
+        "Is COD accepted?",
+        "how should I pay?"
       ],
       "responses": [
         "We accept COD(Cash On Delivery), and online payments."
@@ -83,7 +102,7 @@
         "When will you send it to me?"
       ],
       "responses": [
-        "The order will take between 10 to 15 mins. Else your coffee is free."
+        "The order will take between 10 to 15 mins to reach you. Else your coffee is free."
       ]
     },
     {
@@ -92,11 +111,21 @@
         "What can you do?",
         "What do you do?",
         "What is your work?",
-        "When will you send it to me?",
-        "How will you do?"
+        "How will you send it to me?",
+        "How will you do this?",
+        "How will you take my order?",
+        "I want to give order.",
+        "How can I order?"
       ],
       "responses": [
-        "I will send the order right on your table. You dont need to wait in lines:)"
+        "Just type 'Order me a black coffee'. I will send the order right on your table. You dont need to wait in lines :)"
+      ]
+    },
+    {
+      "tag": "order",
+      "patterns": ["Order me a Black Coffee.", "I want a Black Coffee.", "Give me a Black Coffee.", "Bring me a Black Coffee.", "Give me a Black Coffee.", "Can you order me a Black Coffee?", "Can you give me a Black Coffee?", "Order me a Cold Coffee.", "I want a Cold Coffee.", "Give me a Cold Coffee.", "Bring me a Cold Coffee.", "Give me a Cold Coffee.", "Can you order me a Cold Coffee?", "Can you give me a Cold Coffee?", "Order me a Espresso.", "I want a Espresso.", "Give me a Espresso.", "Bring me a Espresso.", "Give me a Espresso.", "Can you order me a Espresso?", "Can you give me a Espresso?", "Order me a Hot Choclate.", "I want a Hot Choclate.", "Give me a Hot Choclate.", "Bring me a Hot Choclate.", "Give me a Hot Choclate.", "Can you order me a Hot Choclate?", "Can you give me a Hot Choclate?"],
+      "responses": [
+        "giving_order"
       ]
     }
   ]

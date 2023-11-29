@@ -6,3 +6,4 @@ flask-restful
 torch>=2.0.1+cu118
 chainlit
 langchain
+spacy

@@ -2,8 +2,10 @@ import random
 import json
 import torch
 from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
-from items import items 
+from spacy_utils import bag_of_words, tokenize, lemmatize
+from items_list import items 
+from get_order import order
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
@@ -27,14 +29,12 @@ names = list(items.keys())
 prices = list(items.values())
 text = ""
 
-for i in range(len(items)):
-    final = f"{names[i]}: {prices[i]}"
-    text= text + str(final) + "\n"
-
+for item , price in items.items():
+    text += f"""
+    {item.upper()}  -----  {price} $. \n
+    """
 def reply(input):
-    sentence = input
-
-    sentence = tokenize(sentence)
+    sentence = tokenize(input)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -55,8 +55,9 @@ def reply(input):
                 elif str(response).strip() == "asking_prices":
                     return f"{text}"
                 elif str(response).strip() == "giving_order":
-                    return f"Order taken. You order is on the way."
+                    response = order(input)
+                    return response
                 else:
                     return response
     else:
-        return "I do not understand. Ask again"
+        return "Sorry! I did not understand this."

@@ -23,8 +23,8 @@ with tab1:
 
 
 
-    with col2:    
-        st.image(image= "https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF", width=300 )
+    # with col2:    
+    #     st.image(image= "https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF", width=300 )
 
 
 if prompt := st.chat_input(' ORDER  ME  FRAPPE  AND  AMERICANO  .....'):

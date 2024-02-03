@@ -1,7 +1,10 @@
 import get_reply
 import streamlit as st
+import subprocess
 
 st.set_page_config(layout='wide')
+
+subprocess.run("python -m spacy download en_core_web_sm")
 
 # https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF
 st.title("Welcome to STAR CAFE's Chatbot!")

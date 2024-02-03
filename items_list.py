@@ -1,16 +1,14 @@
 import json
 
 items = {
-    "americano": "6",
-    "cappucino": "5",
-    "flat white":"7",
-    "caffe latte":"7",
-    "frappe": "10",
-    "iced latte": "20",
-    "iced mocha":"20",
-    "iced coffee":"30",
-    "black coffee":"10",
-    "cold coffee":"20"
+    "black coffee":"5",
+    "americano": "3",
+    "cappucino": "3",
+    "latte":"4",
+    "frappe": "5",
+    "iced latte": "4",
+    "mocha":"4",
+    "cold coffee":"7"
     }
 
 def get_sentences():

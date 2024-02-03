@@ -1,25 +1,27 @@
 import get_reply
 import streamlit as st
 
+st.set_page_config(layout='wide')
+
 # https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF
 st.title("Welcome to STAR CAFE's Chatbot!")
 
 tab1, tab2 = st.tabs(["Home Page", "CHAT HISTORY"])
 
-with tab1:
-    col1, col2= st.columns(2, gap = "large")
 
-    with col1:
+with tab1:
         st.write(" ")
         st.write(" ")
         st.write(" ")
+        c1,c2,c3 = st.columns(3)
+        with c2:
+            st.link_button("ClICK HERE TO VISIT MENU", url="https://www.google.com")
+        st.write(" ")
+        st.header("MOST FASTEST , SMARTEST AND CONVENIENT WAY TO ORDER A COFFEE")
         st.write(" ")
         st.write(" ")
-        st.write("MOST FASTEST & CONVENIENT WAY")
-        st.write("TO ORDER A COFFEE")
         st.write(" ")
-        st.write(" ")
-        st.write('Just type "Order me a frappe".')
+        st.header('JUST TYPE "Order me a frappe" AND GET YOUR COFFEE ON YOUR TABLE.')
 
 
 

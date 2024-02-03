@@ -3,155 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop Menu - Chatbot</title>
+    <title>STAR CAFE</title>
 </head>
 <body style="background-color: #f5f5f5; font-family: sans-serif;">
     <header style="text-align: center; padding: 20px; background-color: #4a90e2; color: white;">
-        <h1>Coffee Shop Menu</h1>
+        <h1>STAR CAFE MENU</h1>
     </header>
 
     <main style="padding: 20px;">
         <h2 style="text-align: center; color: #4a90e2;">Welcome to our virtual barista! ☕</h2>
-        <p style="text-align: center;">I'm here to help you find your perfect coffee.</p>
-
-      <div style="float:left; margin:10px">
-        <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px;">
+      <div style="margin:10px;text-align: center;">
+        <div style="border-radius: 10px; padding: 20px;">
             <h3 style="color: #4a90e2;">Hot Beverages</h3>
+            
             <ul style="list-style-type: none;">
-                <li style="padding: 10px 0;">☕ Cappuccino - $3.50</li>
-                <li style="padding: 10px 0;">☕ Latte - $4.00</li>
-                <li style="padding: 10px 0;">☕ Americano - $3.00</li>
-                <li style="padding: 10px 0;">☕ Mocha - $4.50</li>
+                <li style="margin-bottom: 10px ;">☕ Black Coffee - $5</li>
+                <li style="margin-bottom: 10px ;">☕ Cappuccino - $3</li>
+                <li style="margin-bottom: 10px ;">☕ Latte - $4</li>
+                <li style="margin-bottom: 10px ;">☕ Americano - $3</li>
+                <li style="margin-bottom: 10px ;">☕ Mocha - $4</li>
             </ul>
         </div>  
       </div>
-      <div style="float:left; margin:10px">
-        <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px;">
+      <div style="margin:10px; text-align: center;">
+        <div style="border-radius: 10px; padding: 20px;">
           <h3 style="color: #4a90e2;">Cold Beverages</h3>
           <ul style="list-style-type: none;">
-              <li style="padding: 10px 0;">☕ Iced Coffee - $3.50</li>
-              <li style="padding: 10px 0;">☕ Iced Latte - $4.00</li>
-              <li style="padding: 10px 0;">☕ Cold Brew - $4.25</li>
+              <li style="margin-bottom: 10px ;">☕ Cold Coffee - $7</li>
+              <li style="margin-bottom: 10px ;">☕ Iced Latte - $6</li>
+              <li style="margin-bottom: 10px ;">☕ Cold Brew - $6</li>
+              <li style="margin-bottom: 10px ;">☕ Frappe - $5</li>
           </ul>
         </div>
       </div>
-      <div style="float:right; width: 500px; margin-right: 50px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
-        <h2 style="text-align: center;">Chatbot</h2>
-        <div id="chatbot" style="max-width: 400px; margin: 0 auto;">
-          <div id="chatbox" style="background-color: #f5f5f5; border-radius: 10px; padding: 20px;">
-              <div id="chatHistory" style="height: 200px; overflow-y: auto;"></div>
-              <input type="text" id="userInput" placeholder="Type your message..." style="width: 100%; border: none; border-radius: 20px; padding: 10px; margin-top: 10px;">
-          </div>
+      <div style="text-align: center;">
+        <h1> 
+        <a href="https://www.google.com">Order through our newly launched AI Chatbot! (Click here to visit chatbot)</a>
+        </h1>
       </div>
-      
-      <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          var chatHistory = document.getElementById("chatHistory");
-          var userInput = document.getElementById("userInput");
-      
-          function appendUserMessage(message) {
-              var userMessage = document.createElement("div");
-              userMessage.textContent = "You: " + message;
-              chatHistory.appendChild(userMessage);
-          }
-      
-          function appendBotResponse(response) {
-              var botResponse = document.createElement("div");
-              botResponse.textContent = "Chatbot: " + response;
-              chatHistory.appendChild(botResponse);
-          }
-      
-          function fetchBotResponse(message) {
-              // Replace 'https://example.com/api/chatbot' with your API endpoint
-              var url = 'http://127.0.0.1:5000/ask/' + encodeURIComponent(message);
-      
-              fetch(url)
-                  .then(function(response) {
-                      if (!response.ok) {
-                          throw new Error('Network response was not ok');
-                      }
-                      return response.json();
-                  })
-                  .then(function(data) {
-                      appendBotResponse(data.response);
-                  })
-                  .catch(function(error) {
-                      console.error('There was a problem with the fetch operation:', error);
-                  });
-          }
-      
-          userInput.addEventListener("keydown", function(event) {
-              if (event.key === "Enter" && userInput.value.trim() !== "") {
-                  var message = userInput.value.trim();
-                  appendUserMessage(message);
-                  fetchBotResponse(message);
-                  userInput.value = "";
-              }
-          });
-      });
-      </script>
-
-        <!-- <div id="chat-history" style="height: 300px; overflow-y: scroll; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
-        </div>
-        <div style="margin-top: 10px;">
-          <input type="text" placeholder="Type your message..." style="width: 100%; border: none; border-radius: 20px; padding: 10px; margin-top: 10px;">
-          <div style="display: flex; justify-content: center; align-items: center;margin-top: 20px;">
-            <div style="text-align: center;">
-                <button onclick="sendMessage()">Send</button> 
-                <button id="getRequestBtn" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Make GET Request</button>
-              </div>
-              <script>
-                document.getElementById("getRequestBtn").addEventListener("click", function() {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("GET", "https://example.com/api/data", true);
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState === 4 && xhr.status === 200) {
-                            // Handle successful response here
-                            console.log(xhr.responseText);
-                        }
-                    };
-                    xhr.send();
-                });
-                </script>
-          </div>
-        </div>
-      </div>
-    -->
-      
     </main>
 </body>
 </html>
-
-<script>
-  function sendMessage() {
-    const userInput = document.getElementById("user-input").value;
-    const chatHistory = document.getElementById("chat-history");
-  
-    // Create a new message element for the user's input
-    const userMessage = document.createElement("div");
-    userMessage.classList.add("user-message");
-    userMessage.textContent = userInput;
-    chatHistory.appendChild(userMessage);
-  
-    // Clear the input field
-    document.getElementById("user-input").value = "";
-  
-    // Fetch the response from your Python API using a GET request
-    fetch(`/api?message=${userInput}`)
-      .then(response => response.json())
-      .then(data => {
-        // Create a new message element for the chatbot's response
-        const botMessage = document.createElement("div");
-        botMessage.classList.add("bot-message");
-        botMessage.textContent = data.response; // Assuming your API returns a response object with a 'response' property
-        chatHistory.appendChild(botMessage);
-  
-        // Scroll to the bottom of the chat history
-        chatHistory.scrollTop = chatHistory.scrollHeight;
-      })
-      .catch(error => {
-        console.error("Error fetching response:", error);
-        // Handle any errors here, e.g., display an error message to the user
-      });
-  }
-  </script>

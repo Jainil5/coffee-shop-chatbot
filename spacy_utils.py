@@ -2,7 +2,7 @@ import spacy
 import numpy as np
 import subprocess
 
-subprocess.run("python -m spacy download en_core_web_sm")
+# subprocess.run("python -m spacy download en_core_web_sm")
 
 # Load the spaCy model
 nlp = spacy.load("en_core_web_sm")

@@ -2,7 +2,7 @@ import random
 import json
 import torch
 from model import NeuralNet
-from spacy_utils import bag_of_words, tokenize, lemmatize
+from spacy_utils import bag_of_words, tokenize
 from items_list import items 
 from get_order import order
 

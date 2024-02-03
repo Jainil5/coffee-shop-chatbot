@@ -4,7 +4,7 @@ import subprocess
 
 st.set_page_config(layout='wide')
 
-subprocess.run("spacy download en_core_web_sm")
+# subprocess.run("spacy download en_core_web_sm")
 
 
 # https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF

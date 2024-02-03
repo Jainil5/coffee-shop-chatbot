@@ -2,7 +2,6 @@ import random
 import json
 import torch
 from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
 from flask import Flask
 from flask_restful import Api,Resource
 from get_reply import reply
@@ -30,9 +29,9 @@ app = Flask(__name__)
 api = Api(app)
 
 class Update(Resource):
-    def post(self,data):
+    def get(self,data):
         response = reply(str(data))
-        return {data : response}
+        return response
 
 api.add_resource(Update,"/ask/<string:data>")
 

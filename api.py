@@ -31,6 +31,7 @@ api = Api(app)
 class Update(Resource):
     def get(self,data):
         response = reply(str(data))
+        print(response)
         return response
 
 api.add_resource(Update,"/ask/<string:data>")

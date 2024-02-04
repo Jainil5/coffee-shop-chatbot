@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Bard</title>
+    <style>
+        /* Overall layout */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Chat container */
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 50px);
+            overflow-y: auto;
+            margin: 0 20px 20px 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Individual messages */
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            text-align: right;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .bot-message {
+            text-align: left;
+            background-color: #f8f8f8;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Input field */
+        .input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .input-field {
+            flex: 1;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .send-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container" id="chat-container">
+        </div>
+    <div class="input-container">
+        <input type="text" id="user-input" class="input-field" placeholder="Ask me anything">
+        <button id="send-button" class="send-button">Send</button>
+    </div>
+
+    <script>
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const chatContainer = document.getElementById('chat-container');
+
+        sendButton.addEventListener('click', async () => {
+            const userMessage = userInput.value.trim();
+            if (!userMessage) {
+                return;
+            }
+
+            userInput.value = ''; // Clear input field
+
+            // Create user message element
+            const userMessageElement = document.createElement('div');
+            userMessageElement.classList.add('message', 'user-message');
+            userMessageElement.textContent = userMessage;
+            chatContainer.appendChild(userMessageElement);
+
+            // Send user message to your Python API using fetch
+            const response = await fetch('/ask', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            });
+
+            if (response.ok) {
+                const data = await response.text();
+                const botMessageElement = document.createElement('div');
+                botMessageElement.classList.add('message', 'bot-message');
+                botMessageElement.textContent = data.message;
+                chatContainer.appendChild(botMessageElement);
+            } else {
+                // Handle API error gracefully
+                const errorMessageElement = document.createElement('div');
+                errorMessageElement.classList.add('message', 'error-message');
+                errorMessageElement.textContent = 'An error occurred. Please try again later.';
+                chatContainer.appendChild(errorMessageElement);
+            }
+        });
+    </script>
+</body>

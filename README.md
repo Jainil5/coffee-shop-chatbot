@@ -5,8 +5,12 @@
 
 # SCREENSHOTS:
 * Home Page:
-![Screenshot (222)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/5e5e4af7-43d4-4047-a712-7e4b98770eef)
-* Order through chat:
-![Screenshot (222)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/fc3015dd-8e58-4fda-8524-a2a74432b9b6)
-* Chat History
-![Screenshot (223)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/acb5afd7-8ec2-42f6-b29c-8e861e2d142c)
+
+![Screenshot (268)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/ec1a57c4-7144-455c-8657-689a95d114ee)
+![Screenshot (262)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/2da38784-e800-4753-81e4-c2269e00dd83)
+![Screenshot (267)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/3d266c01-3fbf-4634-b131-a7a650cdfed3)
+![Screenshot (266)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/1786e238-cbc9-4752-9eb2-818ccafec543)
+![Screenshot (265)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/6ab230f5-acac-47d1-bc8d-075d6820838f)
+![Screenshot (264)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/0f31a284-92a2-4289-a874-ed6eacba3c42)
+![Screenshot (263)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/d600ed79-b78d-49c3-a614-afe2c8e30c7d)
+![Screenshot (262)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/2da38784-e800-4753-81e4-c2269e00dd83)

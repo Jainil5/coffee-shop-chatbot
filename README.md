@@ -3,6 +3,8 @@
 # ABOUT:
 - ### A chatbot for CAFE that can help customers order coffee from their table without the hustle of standing in lines.
 
+# SAMPLE PREVIEW:  
+![Screenshot (263)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/d600ed79-b78d-49c3-a614-afe2c8e30c7d)
 # SCREENSHOTS:
 - ### Home Page:
 ![Screenshot (262)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/2da38784-e800-4753-81e4-c2269e00dd83)

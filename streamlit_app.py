@@ -1,13 +1,9 @@
 import get_reply
 import streamlit as st
-import subprocess
 
 st.set_page_config(layout='wide')
 
-# subprocess.run("spacy download en_core_web_sm")
 
-
-# https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF
 st.title("Welcome to STAR CAFE's Chatbot!")
 
 tab1, tab2 = st.tabs(["Home Page", "CHAT HISTORY"])
@@ -27,10 +23,6 @@ with tab1:
         st.write(" ")
         st.header('JUST TYPE "Order me a frappe" AND GET YOUR COFFEE ON YOUR TABLE.')
 
-
-
-    # with col2:    
-    #     st.image(image= "https://drive.google.com/uc?id=1qEFRPuwAJxxjORe-6vaC-WyLgTot_vaF", width=300 )
 
 
 if prompt := st.chat_input(' ORDER  ME  FRAPPE  AND  AMERICANO  .....'):

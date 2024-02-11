@@ -100,7 +100,7 @@ for epoch in range(num_epochs):
     if (epoch + 1) % 100 == 0:
         print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
 
-print(f'final loss: {loss.item():.4f}')
+# print(f'final loss: {loss.item():.4f}')
 
 data = {
     "model_state":model.state_dict(),
@@ -111,7 +111,7 @@ data = {
     "tags":tags
 }
 
-FILE="data.pth"
-torch.save(data,FILE)
+# FILE="data.pth"
+# torch.save(data,FILE)
 
-print(f"Training complete. File saved to {FILE}")
+# print(f"Training complete. File saved to {FILE}")

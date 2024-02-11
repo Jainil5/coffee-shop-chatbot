@@ -12,7 +12,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "/data.pth"
+FILE = "data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -21,6 +21,8 @@ output_size = data["output_size"]
 all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
+
+print(input_size,hidden_size,output_size,all_words,tags,model_state)
 
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)

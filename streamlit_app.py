@@ -19,7 +19,7 @@ with tab1:
         st.write(" ")
         c1,c2,c3 = st.columns(3)
         with c2:
-            st.link_button("ClICK HERE TO VISIT MENU", url="https://www.google.com")
+            st.link_button("ClICK HERE TO VISIT MENU", url="https://jp5.pythonanywhere.com/star-cafe-menu")
         st.write(" ")
         st.header("MOST FASTEST , SMARTEST AND CONVENIENT WAY TO ORDER A COFFEE")
         st.write(" ")

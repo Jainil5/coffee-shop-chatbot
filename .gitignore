@@ -2,3 +2,6 @@ venv
 data.pth
 __pycache__
 .idea/vcs.xml
+src/new_llm.py
+src/test_api.py
+src/chat.py

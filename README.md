@@ -8,6 +8,9 @@
 # SCREENSHOTS:
 - ### Home Page:
 ![Screenshot (262)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/2da38784-e800-4753-81e4-c2269e00dd83)
+- ### Sample Menu Page:
+![Screenshot (256)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/e76268c3-4b28-4f00-92e8-3651a4846a90)
+
 - ### Example chat:
 ![Screenshot (266)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/1786e238-cbc9-4752-9eb2-818ccafec543)
 ![Screenshot (268)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/ec1a57c4-7144-455c-8657-689a95d114ee)

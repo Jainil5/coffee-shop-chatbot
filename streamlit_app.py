@@ -1,4 +1,3 @@
-import get_reply
 import streamlit as st
 
 st.set_page_config(layout='wide')

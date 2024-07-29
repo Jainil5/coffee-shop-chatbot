@@ -26,7 +26,9 @@ with tab1:
 
 
 if prompt := st.chat_input(' ORDER  ME  FRAPPE  AND  AMERICANO  .....'):
-        response = get_reply.reply(prompt)
+        # response = get_reply.reply(prompt)
+        response = "REPLY"
+        
         # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
         # Display user message in chat message container

@@ -14,6 +14,8 @@
 ![Screenshot (256)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/e76268c3-4b28-4f00-92e8-3651a4846a90)
 
 - ### Example chat:
+![Screenshot 2024-07-30 132224](https://github.com/user-attachments/assets/f7ac6e51-c8e9-4c31-854c-e0d3d0fadce3)
+![Screenshot 2024-07-30 132312](https://github.com/user-attachments/assets/0353148d-41d0-4308-9d7f-58cad04f0cdb)
 ![Screenshot (266)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/1786e238-cbc9-4752-9eb2-818ccafec543)
 ![Screenshot (268)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/ec1a57c4-7144-455c-8657-689a95d114ee)
 ![Screenshot (264)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/0f31a284-92a2-4289-a874-ed6eacba3c42)
@@ -22,3 +24,4 @@
 
 - ### Chat History Page:
 ![Screenshot (265)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/6ab230f5-acac-47d1-bc8d-075d6820838f)
+

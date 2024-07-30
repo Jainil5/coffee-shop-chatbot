@@ -2,6 +2,7 @@
 
 # ABOUT:
 - ### A chatbot for CAFE that can help customers order coffee from their table without the hustle of standing in lines.
+- ### Powered by LLM - This chatbot can also define food items you ask it.
 
 # SAMPLE PREVIEW:  
 - ### Example of ordering a coffee through this chatbot.

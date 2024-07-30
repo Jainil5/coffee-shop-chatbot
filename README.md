@@ -14,7 +14,7 @@
 ![Screenshot (256)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/e76268c3-4b28-4f00-92e8-3651a4846a90)
 
 - ### Example chat:
-### ---
+###   ---
 ![Screenshot 2024-07-30 132224](https://github.com/user-attachments/assets/f7ac6e51-c8e9-4c31-854c-e0d3d0fadce3)
 ![Screenshot 2024-07-30 132312](https://github.com/user-attachments/assets/0353148d-41d0-4308-9d7f-58cad04f0cdb)
 ![Screenshot (266)](https://github.com/Jainil5/coffee-shop-chatbot/assets/96060948/1786e238-cbc9-4752-9eb2-818ccafec543)

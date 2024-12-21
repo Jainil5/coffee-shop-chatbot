@@ -1,10 +1,8 @@
-nltk
-numpy
+numpy==2
 pandas
 flask
 flask-restful
 torch
-langchain
 spacy
 streamlit==0.69.0
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz

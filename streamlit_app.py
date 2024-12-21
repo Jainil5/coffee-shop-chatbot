@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.set_page_config(layout='wide')
+from get_reply import reply
 
+st.set_page_config(layout='wide')
 
 st.title("Welcome to STAR CAFE's Chatbot!")
 
@@ -25,8 +26,7 @@ with tab1:
 
 
 if prompt := st.chat_input(' ORDER  ME  FRAPPE  AND  AMERICANO  .....'):
-        # response = get_reply.reply(prompt)
-        response = "REPLY"
+        response = reply(prompt)
         
         # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})

@@ -3,10 +3,10 @@ import json
 items = {
     "black coffee":"5",
     "americano": "3",
+    "iced latte": "4",
     "cappucino": "3",
     "latte":"4",
     "frappe": "5",
-    "iced latte": "4",
     "mocha":"4",
     "cold coffee":"7"
     }

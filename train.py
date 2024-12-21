@@ -111,7 +111,7 @@ data = {
     "tags":tags
 }
 
-# FILE="data.pth"
-# torch.save(data,FILE)
+FILE="data.pth"
+torch.save(data,FILE)
 
-# print(f"Training complete. File saved to {FILE}")
+print(f"Training complete. File saved to {FILE}")

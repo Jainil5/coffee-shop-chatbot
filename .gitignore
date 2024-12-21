@@ -1,5 +1,4 @@
 venv
-data.pth
 __pycache__
 .idea/vcs.xml
 src/new_llm.py

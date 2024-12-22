@@ -1,4 +1,5 @@
 numpy==2
+pybind11
 pandas
 flask
 flask-restful
